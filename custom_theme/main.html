@@ -205,3 +205,9 @@
 </footer>
 
 {% endblock %}
+
+{% block styles %}
+
+  <link href="https://asc-public-docs.s3.us-west-2.amazonaws.com/common/uswds/3.6.0/css/uswds.min.css" rel="stylesheet" type="text/css" media="screen" /> 
+  {{ super() }}
+{% endblock %}

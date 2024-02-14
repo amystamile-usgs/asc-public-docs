@@ -47,9 +47,9 @@ Declination (Dec) is one of two angles of the North Pole of a target body as a f
 ### Detector Resolution
 The ground distance in meters from the left edge to the right edge of a detector. If the lines and samples are not being summed and averaged, this value is equal to the pixel resolution. The formula for estimating this value works well if the image is taken near nadir, but the accuracy falls off rapidly the farther off-nadir the image is taken. For an estimate that handles off-nadir images with higher accuracy, one should use 
 ### Digital Number
-The numeric value of a single pixel in an image. The value may represent almost any unit. For example: reflectance (I/F), radiance, elevation, or radius. Digital Numbers (DNs) can be discrete integers or floating point values. 
+(or DN) The numeric value of a single pixel in an image. The value can represent a measurement in various units, such as reflectance (I/F), radiance, elevation, or radius. Digital Numbers can be discrete integers or floating point values.
 ### DN
-Digital Numbers are a subset of Integers, more specifically positive integers.
+Digital Number. The numeric value of a single pixel in an image. The value can represent a measurement in various units, such as reflectance (I/F), radiance, elevation, or radius. Digital Numbers can be discrete integers or floating point values.
 
 ## E
 
