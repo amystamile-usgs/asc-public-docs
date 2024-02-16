@@ -57,8 +57,7 @@ window):
     that were processed and analyzed using ISIS as part of the
     scientific research resulting from the mission: Textures of the
     [Soils and Rocks at Gusev Crater from Spirit's Microscopic
-    Imager](http://astrogeology.usgs.gov/search/details/Mars/MER/ImagerFindings/ScienceMI824/pdf)
-    .
+    Imager](http://astrogeology.usgs.gov/search/details/Mars/MER/ImagerFindings/ScienceMI824/pdf).
 
 ## User Interface for ISIS
 
@@ -104,7 +103,7 @@ create output data.
 -----
 
 Reserved arguments all begin with a dash (-), and are not sensitive to
-case (i.e., -help is the same as -HElp). A list of basic reserved
+case (i.e., `-help` is the same as `-HElp`). A list of basic reserved
 arguments includes:
 
   - **-webhelp** Launch a web browser showing the ISIS help page for
@@ -134,9 +133,9 @@ arguments includes:
 
 Reserved arguments come in two forms, solitary keyword or keyword value
 pair. Solitary keywords tell the program to perform some special action
-such as the -help keyword above. Keyword value pairs also tell the
+such as the `-help` keyword above. Keyword value pairs also tell the
 program to perform some special action, but use additional information
-for that action like in the -restore argument above. The keyword and
+for that action like in the `-restore` argument above. The keyword and
 value must be separated from each other with an equals sign (=). The
 equals sign may have spaces on either or both sides of it.
 
@@ -169,7 +168,7 @@ different types of parameters:
   - **Data file names** - A data file name is the location on disk of a file
     which is not an ISIS cube. This includes input files from missions
     such as Mars Global Surveyor or Viking, and output files such as
-    that produced by the program **stats** or **isis2std** .
+    that produced by the program **stats** or **isis2std**.
 
     ```
     to=myStatistic.dat
@@ -177,14 +176,14 @@ different types of parameters:
 
   - **Floating point numbers** - Floating point numbers are numeric values
     with a whole part and/or a fractional part. Parameters with this
-    type can be given values like 1.0, 0.7823, 127 or 0.31416E+1
+    type can be given values like `1.0`, `0.7823`, `127` or `0.31416E+1`
 
     ```
     radius=317.681
     ```
 
   - **Integers** - Integer numbers have only a whole part. Parameters of
-    this type can be given values like 0, 2, -18223 or 255.
+    this type can be given values like `0`, `2`, `-18223` or `255`.
 
     ```
     lines=1024
@@ -192,7 +191,7 @@ different types of parameters:
 
   - **Booleans** - Boolean parameters are used as flags to indicate true or
     false. The ISIS user interface allows true values to be represented
-    by True, T, Yes or Y. False values can be False, F, No or N. Any
+    by `True`, `T`, `Yes` or `Y`. False values can be `False`, `F`, `No` or `N`. Any
     mixture of upper and lower case letters is allowed. The name of the
     parameter for boolean's is usually a question such as USEDEM. This
     should be read as "Do you want the program to use a DEM when it
@@ -204,7 +203,7 @@ different types of parameters:
     ```
 
   - **Strings** - A string is a simple sequence of printable characters. For
-    example "MARS", "BiLinear" or "The quick brown fox."
+    example `MARS`, `BiLinear` or `The quick brown fox`.
 
     ```
     bittype=real
@@ -226,18 +225,17 @@ mode unless explicitly overridden using the reserved argument `-gui`.
 -----
 
 To run an ISIS program in graphical mode, simply type the name of the
-program followed by the Enter key. The program will display a window
+program followed by the `Enter ↵` key. The program will display a window
 that allows you to set parameters for the program, start/stop running
 the algorithm on the data, observe the current status of the program,
 and see any logged information.
 
 As mentioned earlier, if there are any parameter arguments on the
 command line the program will run in text mode. You can override this
-feature by supplying the -gui reserved argument on the command line. The
-gui flag refers to the term Graphical User Interface (or, simply GUI,
-pronounced ''gooey''), and forces the application to run in graphical
-mode. The program will then load any parameter arguments and launch the
-program in graphical mode instead of text mode.
+feature by supplying the `-gui` reserved argument on the command line. The
+`-gui` flag refers to the term Graphical User Interface (GUI), and forces the
+application to run in graphical mode. The program will then load any parameter
+arguments and launch the program in graphical mode instead of text mode.
 
 [![LowpassScreenShot1.png](../../assets/isis-fundamentals/LowpassScreenShot1.png){ align=right width=400 }](../../assets/isis-fundamentals/LowpassScreenShot1.png "LowpassScreenShot1.png")
 
@@ -260,12 +258,12 @@ you fill in the parameters.
 
 [![LowpassScreenShot2.png](../../assets/isis-fundamentals/LowpassScreenShot2.png){ align=right width=400 }](../../assets/isis-fundamentals/LowpassScreenShot2.png "LowpassScreenShot2.png")
 
-Here, lowpass was run with parameters, but by using the -gui flag,
+Here, lowpass was run with parameters, but by using the `-gui` flag,
 lowpass opens in graphical mode and automatically fills in values for
 any parameters you passed it on the command line.
 
 As you can see the parameter arguments on the command line were used to
-set the values for the **lowpass** application, and the -gui reserved
+set the values for the **lowpass** application, and the `-gui` reserved
 argument caused the program to run in graphical mode instead of in text
 mode.
 
@@ -285,7 +283,7 @@ correct the error and try again.
 [![LowpassScreenShot3.png](../../assets/isis-fundamentals/LowpassScreenShot3.png){ align=right width=400 }](../../assets/isis-fundamentals/LowpassScreenShot3.png "LowpassScreenShot3.png")
 
 We ran the **lowpass** application, passing all the parameters along
-on the command line. Oops! We spelled "samples" wrong, but
+on the command line. Oops! "samples" was spelled wrong, but
 **lowpass** gives us a handy error message to let us know what the
 problem was. We run it again, it shows us its status as it runs, and
 returns us to the command line prompt when it's finished.
@@ -295,12 +293,12 @@ returns us to the command line prompt when it's finished.
 ## Using qview to View Cubes
 
 Naturally, one of the first things anyone wants to do when they get
-their hands on image data is look at it\! The **qview** application is
+their hands on image data is look at it! The **qview** application is
 the image viewer for ISIS. **qview** has a number of tools to let you
 zoom in and out, change the contrast, choose color combinations,
 compare, and otherwise interact with and look at your images. We'll talk
 about some of these tools in detail later. For now, let's just learn how
-to open an image in **qview** .
+to open an image in **qview**.
 
 1.  Run **qview** by typing qview on the command line. The **qview**
     viewer application window will open.
@@ -313,7 +311,7 @@ to open an image in **qview** .
       - Select one or more to open
       - Click the Open button
 
-3.  Your image(s) will appear in the **qview** window\!
+3.  Your image(s) will appear in the **qview** window!
 
 ### Load and Display a Multi-Band Cube
 
