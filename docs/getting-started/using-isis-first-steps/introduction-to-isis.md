@@ -55,8 +55,8 @@ window):
     attributes. See the following Science Magazine abstract for examples
     of images from the Mars Exploration Rover Mission Microscopic Image
     that were processed and analyzed using ISIS as part of the
-    scientific research resulting from the mission: Textures of the
-    [Soils and Rocks at Gusev Crater from Spirit's Microscopic
+    scientific research resulting from the mission: [Textures of the
+    Soils and Rocks at Gusev Crater from Spirit's Microscopic
     Imager](http://astrogeology.usgs.gov/search/details/Mars/MER/ImagerFindings/ScienceMI824/pdf).
 
 ## User Interface for ISIS
@@ -82,7 +82,7 @@ documentation.
 
 [![QviewTwoCubes.png](../../assets/isis-fundamentals/QviewTwoCubes.png)](../../assets/isis-fundamentals/QviewTwoCubes.png "QviewTwoCubes.png")
 
-> **qview** , ISIS's interactive image display application
+> **qview**, ISIS's interactive image display application
 
 All ISIS programs are launched via the command line. The command line
 refers to the text typed at the prompt of a terminal window such as
@@ -152,7 +152,7 @@ different types of parameters:
 
   - **Cube file names** - A cube file name is the location on disk of an
     ISIS cube. It can be either the input to this program or where to
-    place the output. Input cubes, must be the output from some other
+    place the output. Input cubes must be the output from some other
     ISIS program. Most programs can process cubes from ISIS2, but some
     information may be interpreted differently. Output cubes, will
     always be the location to place processed results from the
