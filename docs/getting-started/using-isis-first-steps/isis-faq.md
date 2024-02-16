@@ -79,7 +79,7 @@
     [4]: https://github.com/DOI-USGS/ISIS3?tab=readme-ov-file#full-isis-data-download
     [5]: https://github.com/DOI-USGS/ISIS3?tab=readme-ov-file#mission-specific-data-downloads
     [6]: https://github.com/DOI-USGS/ISIS3?tab=readme-ov-file#isis-spice-web-service
-    [7]: https://github.com/DOI-USGS/ISIS3/wiki/Locating_and_Ingesting_Image_Data
+    [7]: ../../getting-started/using-isis-first-steps/locating-and-ingesting-image-data.md
 
 ???+ abstract "Additional Helpful Docs"
 
