@@ -3,7 +3,7 @@
 ## What Is A Cube?
 ---------------
 
-[![Cube.png](../../assets/isis-fundamentals/Cube.png){ align=right }](../../assets/isis-fundamentals/Cube.png "Dimensions of an ISIS3 Cube")
+![Three axes from the top left front corner of a cube, showing lines in the Y dimension, samples in the X dimension, and bands in the Z dimension.](../../assets/isis-fundamentals/Cube.png "Dimensions of an ISIS Cube"){ align=right }
 
 A cube is a 3-dimensional image with axis: samples, lines, and bands. The physical dimensions of a cube are called the number of samples (NS), number of lines (NL), and number of bands (NB). Typically, the sample and line dimensions are used to represent spatial information while the band dimension represents spectral information. See the table below for examples of the line, sample, and band dimensions of a few data sets from planetary missions.
 
@@ -86,22 +86,18 @@ Each pixel contains a numerical value, often referred to as the digital number, 
 ## Core Base and Multiplier Basics
 -------------------------------
 
-Recall that a digital numbers are the values of pixels. These values represent measurements in units like radiance, reflectance, elevation, or emissivity.
+An 8-bit cube needs to represent elevations in meters. Unfortunately, 8-bit pixels have a range of 0 to 255, which is very restrictive for elevation. ISIS3 deals with this problem by using a **Core Base** and **Multiplier**. Each DN is really treated as a kind of floating point number in all ISIS3 programs.  A multiplier of 100 on an 8-bit cube would make the DN range from 0 to 25500.  A base of 30 with a multiplier of 100 would make that range from 30 to 25530.
 
-Let's assume we have an 8-bit cube with values representing the elevation in meters. Unfortunately 8-bit pixels have a range of 0 to 255, which is very restrictive for elevation. ISIS3 deals with this problem by using a Core Base and Multiplier. Each DN is really treated as a floating point number in all ISIS3 programs.  A multiplier of 100 on an 8-bit cube would make the DN range from 0 to 25500.
+*Base + Multiplier * DN = True DN*
 
-Try the [ISIS Multiplier Demo](https://doi-usgs.github.io/ISIS3/ISIS_Cube_Format.html#Core-Base-and-Multiplier-Basics) to see multipliers in action.
-
-## Sub-Pixel Definition
+## Sub-Pixel Positioning
 --------------------
 
 ISIS3 programs and users often need to interact at the sub-pixel level. That is, fractional pixel positions. The integral sample/line position is defined to be the center of a pixel.
 
-Try the [ISIS Sub-Pixel Demo](https://doi-usgs.github.io/ISIS3/ISIS_Cube_Format.html#Sub-Pixel-Definition) to explore sample and line positions.
+Take a pixel centered at (5, 5) for example.  The upper left of the pixel contains the point (4.75, 4.75), and the lower right of the pixel contains the point (5.25, 5.25).  The threshold between pixels is a value ending in .5
 
 ## Summary
 -------
 
 Cubes are made up of individual pixels. Each pixel usually represents some area of a planet, moon, asteroid or other body. Pixels hold a DN (digital number). That number can be one, two or four bytes long depending on the accuracy necessary to represent the data. DNs can be modified by a "Base" and "Multiplier". The columns of a cube are called samples, the rows are called lines and a plane of samples and lines is called a band.
-
-[Cube.png](../../assets/isis-fundamentals/Cube.png) (44.8 KB) Adam Paquette, 2016-06-10 12:19 PM

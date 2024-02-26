@@ -1,6 +1,6 @@
 # Bit-Type
 
-## Bit Type Basics
+## Bit-Type Basics
 -----
 
 Computers store values in base-2 or binary, ones and zeros.
@@ -19,7 +19,7 @@ There are three bit-types supported in ISIS:
         <tr>
             <th>Bit-Depth</th>
             <th>Data Type</th>
-            <th>Number of Bytes</th>
+            <th>Bytes per Value</th>
             <th>Range</th>
         </tr>
     </thead>
@@ -103,11 +103,11 @@ that can be represented also increases.
 *   **Binary** : A base-2 numeral system. [Binary Number on Wikipedia](http://en.wikipedia.org/wiki/Binary_number).
 *   **Bit** : Short for binary digit, the smallest unit of digital storage. Bits are either "0" or "1".
 *   **Byte** : Short for binary term. In ISIS (and in most places), a byte is a group of eight bits. These 8 bits together can represent an 8-digit binary number from 00000000 (0) to 11111111 (255).
-*   **Bit type** : Refers to bit-depth or data type, representing how many bits there are per single pixel in a cube.
+*   **Bit-Type** : Refers to bit-depth or data type, representing how many bits there are per single pixel in a cube.
 *   **DN** : An abbreviation of digital number. For images, particularly ISIS cubes, a DN is also referred to as a pixel.
 
 
-## What's the bit type of my image?
+## What's the bit-type of my image?
 
 -----
 
@@ -183,24 +183,28 @@ by 100 lines:
   </tbody>
 </table>
 
-## How do I set the bit type?
+## How do I set the bit-type?
 
 -----
 
-Many of the ISIS3 programs allow the user to set the bit type by setting
-the bit type attribute for an output file.
+Many of the ISIS3 programs allow the user to set the bit-type by setting
+the bit-type attribute for an output file.
 
-| Number of Bytes | Output Bit Type |
-| --------------- | --------------- |
-| 1               | 8-bit           |
-| 2               | 16-bit          |
-| 4               | 32-bit          |
+!!! example "Sample Cubes"
 
-### Increasing the Bit Type of a Cube
+    Try converting the bit-types of these cubes with ISIS as described below.
 
-Increasing the bit type of a cube is a fairly straightforward matter
-because the range of data in a smaller bit type cube fits easily in the
-increased range offered by the larger bit type.  Increasing the bit-type 
+    | Bytes per Value | Output Bit-Type | Sample Cube |
+    | --------------- | --------------- | ----------- |
+    | 1               | 8-bit           | [8-bit.cub](../../assets/isis-fundamentals/8-bit.cub) (80.4 KB) Ian Humphrey, 2016-06-01 10:41 AM   |
+    | 2               | 16-bit          | [16-bit.cub](../../assets/isis-fundamentals/16-bit.cub) (96.4 KB) Ian Humphrey, 2016-06-01 10:41 AM |
+    | 4               | 32-bit          | [32-bit.cub](../../assets/isis-fundamentals/32-bit.cub) (128 KB) Ian Humphrey, 2016-06-01 10:41 AM  |
+
+### Increasing the Bit-Type of a Cube
+
+Increasing the bit-type of a cube is a fairly straightforward matter
+because the range of data in a smaller bit-type cube fits easily in the
+increased range offered by the larger bit-type.  Increasing the bit-type 
 of a cube will not increase the accuracy of the data in the cube, but
 could allow the results of future operations to be recorded with more precision.
 
@@ -217,7 +221,7 @@ by appending the attributes you wish to change to the file name:
 In the
 [cubeatt](http://isis.astrogeology.usgs.gov/Application/presentation/Tabbed/cubeatt/cubeatt.html)
 graphical user interface (GUI), simply hit the ATT (attributes) button
-next to the output file selection box and select the desired bit type in
+next to the output file selection box and select the desired bit-type in
 the Attributes dialog. Notice when you change the attributes through the
 ATT dialog, the attributes are appended to the output filename in the
 main application window in the same fashion as the command line. Most
@@ -228,16 +232,16 @@ Attributes dialog.
 
     Increasing the Bit-Type of a cube will increase the file size.
 
-### Decreasing the Bit Type of a Cube
+### Decreasing the Bit-Type of a Cube
 
-Decreasing the bit type of a cube is a bit trickier because the range of
-data in a larger bit type cube probably does not fit easily in the
-decreased range of the smaller bit type. In this case, you must supply
+Decreasing the bit-type of a cube is a bit trickier because the range of
+data in a larger bit-type cube probably does not fit easily in the
+decreased range of the smaller bit-type. In this case, you must supply
 the minimum and maximum values of the input file to convert to valid DNs
 in the output file. The values will then be stretched (scaled) as
 necessary to fit into the reduced data range. To perform this operation,
 you must know the range of the input data and provide that information
-to the application that is used to reduce the bit type.
+to the application that is used to reduce the bit-type.
 
 1.  Get statistics for your image: Run **stats** to get the data range:
 
@@ -289,15 +293,8 @@ to the application that is used to reduce the bit type.
 
 !!! tip
 
-    When reducing the bit type, the original values may be stretched (or
-    scaled) to fit in the range of the target bit type. This may not
+    When reducing the bit-type, the original values may be stretched
+    (scaled) to fit in the range of the target bit-type. This may not
     only shift the DN values to the new range, but may actually merge
     ranges of DNs into a single value if the number of distinct values
     in the original file is greater than the range of the output bit-type.
-
-
-[8-bit.cub](../../assets/isis-fundamentals/8-bit.cub) (80.4 KB) Ian Humphrey, 2016-06-01 10:41 AM
-
-[16-bit.cub](../../assets/isis-fundamentals/16-bit.cub) (96.4 KB) Ian Humphrey, 2016-06-01 10:41 AM
-
-[32-bit.cub](../../assets/isis-fundamentals/32-bit.cub) (128 KB) Ian Humphrey, 2016-06-01 10:41 AM

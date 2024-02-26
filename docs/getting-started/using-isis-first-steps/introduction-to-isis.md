@@ -162,7 +162,7 @@ different types of parameters:
 
     ```
     from=r0700563_lev1.cub
-    to= f431a62
+    to=f431a62
     ```
 
   - **Data file names** - A data file name is the location on disk of a file
