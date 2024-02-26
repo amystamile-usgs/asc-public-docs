@@ -128,10 +128,6 @@ When a text PCK is used, the BodyRotation Table contains coefficients for polyno
 
 The polynomial coefficients for the rotation from J2000 to the target body reference frame are stored on the BodyrRotation Table label, but the binary data also contains a [quaternion cache](#quaternion-cache) derived from the rotation polynomials.
 
-### Bundle Adjusted BodyRotation Table
-
-TODO
-
 ## The SunPosition Table
 
 The SunPosition Table contains the position of the Sun relative to the target body in the J2000 reference frame. The SunPosition Table has the same format as the [the InstrumentPosition Table](#the-instrumentposition-table) except it always has a [linear cache](#linear). The Position is in kilometers and the Velocity is in kilometers per second.
