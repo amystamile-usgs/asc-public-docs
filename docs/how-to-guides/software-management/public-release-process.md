@@ -271,11 +271,12 @@ This step covers creating the builds and the installation environments of ISIS f
 
 **This step is only done for standard feature releases.** 
 
-This step will update the ISIS documentation on our [website](https://isis.astrogeology.usgs.gov/UserDocs/) for our users worldwide. These commands must be run as isis3mgr for permission purposes. 
+This step will update the ISIS documentation on our [website](https://isis.astrogeology.usgs.gov/UserDocs/) for our users worldwide.
 
 
 ### Part A: Build the documentation 
 
+* Add the new version to Documentation Versions in the [menu.xsl](https://github.com/DOI-USGS/ISIS3/blob/dev/isis/src/docsys/build/menu.xsl#L105).
 
 * Perform a local build (not a conda build) using the instructions for [developing ISIS with cmake](../../how-to-guides/isis-developer-guides/developing-isis3-with-cmake.md).
 
@@ -288,10 +289,9 @@ This step will update the ISIS documentation on our [website](https://isis.astro
 
 This step requires that you have an rclone config for the `asc-docs` bucket. You can get credentials from vault.
 
-In the `$ISISROOT` directory run the following commands, but replace <your-config> with your config for `asc-docs` and <version-number> with the version of ISIS you are releasing. For example if you config is called `s3-docs` and you are releasing 8.1.0, the first command would be `rclone sync --dry-run docs/8.1.0 s3-docs://asc-docs/isis-site/8.1.0/
+In the `$ISISROOT` directory run the following commands, but replace <your-config> with your config for `asc-docs` and <version-number> with the version of ISIS you are releasing. For example if you config is called `s3-docs` and you are releasing 8.1.0, the first command would be `rclone sync --dry-run docs/8.1.0 s3-docs://asc-docs/isis-site/8.1.0/`
 
 * Optionally add the `--dry-run` flag to test prior to actually uploading, `rclone sync docs/<version-number> <your-config>://asc-docs/isis-site/<version-number>/`
-* `rclone copy docs/index.html <your-config>://asc-docs/isis-site/`
 
 
 ## Step 11: Communicate Availability of Build 
