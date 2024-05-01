@@ -48,7 +48,7 @@ All ISIS command lines take the following form:
 
 `program parameter1=value parameter2=value ...parameterN=value`
 
-The parameters can be entered in any order, can be abbreviated so long as they are unique, are case insensitive, and can be omitted if they have a default value. The values can be integers, doubles, strings, or booleans, and homogenous arrays of these types.
+The parameters can be entered in any order, can be abbreviated so long as they are unique, are case insensitive, and can be omitted if they have a default value. The values can be integers, doubles, strings, or booleans, and homogeneous arrays of these types.
 
 Display the _lowpass_ GUI from the command line or use the -help reserved parameter to see the parameter names that are available for the program. Simply type "lowpass" to display the GUI, or type the command "lowpass -h" to display the parameter names necessary to run a particular ISIS program on the command line. The default values are shown below, to the right of the equal sign. The results of the two methods shown below can be used as a guide to construct the commands on the command line.
 
