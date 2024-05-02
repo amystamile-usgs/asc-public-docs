@@ -106,8 +106,8 @@ EndGroup
 
 |Keyword|Type|Description|
 |--- |--- |--- |
-|Type|String (UnsignedByte, SignedWord, Real)|Currently there are three type of pixels in ISIS which represent unsigned 8-bit vaues (0 to 255), signed 16-bit values (-32768 to 32767) and 32-bit IEEE floating point pixel values.  [Future option] Support alternative pixel types.|
-|ByteOrder|String (Lsb, Msb)|This defines the byte order or endianess of the pixels.  The order must either be least significant byte (Lsb) or most significant byte (Msb).|
+|Type|String (UnsignedByte, SignedWord, Real)|Currently there are three type of pixels in ISIS which represent unsigned 8-bit values (0 to 255), signed 16-bit values (-32768 to 32767) and 32-bit IEEE floating point pixel values.  [Future option] Support alternative pixel types.|
+|ByteOrder|String (Lsb, Msb)|This defines the byte order or endianness of the pixels.  The order must either be least significant byte (Lsb) or most significant byte (Msb).|
 |Base, Multiplier|Double|These values are used to scale UnsignedByte and SignedWord pixels so they appear to be Real (32-bit floating) pixels.  That is, realDn = diskDN * Multiplier + Base.  These values are always 0.0 and 1.0 when Type=Real.|
 
 ## AlphaCube Group
