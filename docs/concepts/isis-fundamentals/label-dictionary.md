@@ -219,7 +219,7 @@ See [The ISIS Attached Spice Format](../isis-fundamentals/spice-format.md#the-ke
 
 ## Mapping Group
 
-The Mapping Group is used to define map projections. Recommending reading includes the ISIS Map Projection Guide and Map Projections – A Working Manual, Snyder, J.P., U.S. Geological Survey, Bulletin 1532.
+The Mapping Group is used to define map projections. Recommending reading includes [Map projections: A working manual, Snyder, J.P., U.S. Geological Survey, Professional Paper 1395](https://pubs.usgs.gov/publication/pp1395).
 
 ```
 Group = Mapping
