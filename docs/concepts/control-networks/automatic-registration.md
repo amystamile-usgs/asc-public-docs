@@ -195,14 +195,10 @@ is:
 
 **Search Chip Size Requirement:**
 
-!!! danger "TODO - Update Link"
-
-    TODO: Update **Sub-Pixel Definition** links to new docs once those pages are migrated.
-
 N(search) \>= N(pattern) + 2 and similarly for M. This ensures that the
 Pattern Chip spans at least a 3x3 window within the Search Chip. An
 important requirement for surface fitting in order to compute sub-pixel
-accuracy. (Refer to: [Sub-Pixel Definition](https://DOI-USGS.github.io/ISIS3/gh-pages/ISIS_Cube_Format)).
+accuracy. (Refer to: [Sub-Pixel Positioning](../isis-fundamentals/cube-format.md#sub-pixel-positioning)).
 
 ???+ tip "Tips"
 
@@ -229,16 +225,12 @@ accuracy. (Refer to: [Sub-Pixel Definition](https://DOI-USGS.github.io/ISIS3/gh-
 
 ## Restricting Input Pixel Ranges
 
-!!! danger "TODO - Update Link"
-
-    TODO: Update **Input Pixels** and **Special Pixel** links to new docs once those pages are migrated.
-
-The validity of the [input pixels](https://DOI-USGS.github.io/ISIS3/gh-pages/ISIS_Cube_Format) 
+The validity of the [input pixels](../isis-fundamentals/cube-format.md#what-are-pixels) 
 of the Pattern Chip is the very first test
 performed. Prior to the match algorithm being invoked during the walk
 process, a simple test is performed to ensure there are enough pixels to
 work with. Pixels are deemed valid if they are in the minimum/maximum
-range and/or they are not [special pixel](https://DOI-USGS.github.io/ISIS3/gh-pages/Special_Pixels.html) values.
+range and/or they are not [special pixel](../isis-fundamentals/special-pixels.md) values.
 
 The Pattern Chip is only checked once. If it does not contain enough
 valid pixels, the match is deemed to fail. Otherwise, the walk through
@@ -329,10 +321,6 @@ display application
 
 ## Sub-Pixel Accuracy
 
-!!! danger "TODO - Update Link"
-
-    TODO: Update **Sub-Pixel Definition** links to new docs once those pages are migrated.
-
 The attempt to reach a registration of sub-pixel accuracy is performed
 on the Fit Chip. The Fit Chip is created as the
 Pattern Chip is walked through Search
@@ -340,7 +328,7 @@ Chip. The Fit Chip contains the resulting
 correlation position between the two chips of a maximum of ONE pixel
 accuracy. In many cases, the actual, ultimate registration may lie
 somewhere between two pixels. (Refer to:
-[Sub-Pixel Definition](https://DOI-USGS.github.io/ISIS3/gh-pages/ISIS_Cube_Format)).
+[Sub-Pixel Positioning](../isis-fundamentals/cube-format.md#sub-pixel-positioning)).
 
 The sub-pixel accuracy can be turned off through the PVL settings as
 follows:

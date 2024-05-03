@@ -134,7 +134,7 @@ Example (not all parameters shown):
 
 [**phocube**](http://isis.astrogeology.usgs.gov/Application/presentation/Tabbed/phocube/phocube.html)
 will compute and generate a separate output [multi-band ISIS
-cube](https://DOI-USGS.github.io/ISIS3/gh-pages/ISIS_Cube_Format.html) where each band will represent the selected
+cube](../isis-fundamentals/cube-format.md) where each band will represent the selected
 (parameter=TRUE) geometric and photometric elements. The bands are named
 appropriately in the output cube labels: **Group=BandBin** .
 
