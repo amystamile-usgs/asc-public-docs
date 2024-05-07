@@ -89,6 +89,7 @@ nav:
       - Bit Types:                         concepts/isis-fundamentals/bit-types.md
       - Special Pixels:                    concepts/isis-fundamentals/special-pixels.md
       - Command Line Usage:                concepts/isis-fundamentals/command-line-usage.md
+      - Error Dictionary:                  concepts/isis-fundamentals/error-dictionary.md
     - SPICE:
       - SPICE Overview:                            concepts/spice/spice-overview.md
       - SPICE Position Functions and Requirements: concepts/spice/spice-position-functions-and-requirements.md
