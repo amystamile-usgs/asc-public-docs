@@ -1,6 +1,6 @@
 # ISIS Demos and Workshops
 
-## **ISIS Photogrammetric Control Demostration - June 27, 2012**
+## **ISIS Photogrammetric Control Demonstration - June 27, 2012**
 ------
 These specific ISIS demonstrations were held on Wednesday, June 27 2012 (ISIS3.4.0 Public Release)
 
