@@ -62,7 +62,7 @@ nav:
       - General Utility with FX:           how-to-guides/image-processing/general-utility-with-fx.md
       - Bundle Adjustment in ISIS:         how-to-guides/image-processing/bundle-adjustment-in-isis.md
     - Software Management:
-      - ISIS Public Release Process:       how-to-guides/software-management/public-release-process.md
+      - Public Release Process:            how-to-guides/software-management/public-release-process.md
       - Software Support:                  how-to-guides/software-management/software-support.md
       - Guidelines for Reporting Issues:   how-to-guides/software-management/guidelines-for-reporting-issues.md
       - Guidelines for Pull Requests: how-to-guides/software-management/guidelines-for-pull-requests.md
