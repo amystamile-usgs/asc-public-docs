@@ -2,6 +2,12 @@
 
 ## **ISIS Photogrammetric Control Demonstration - June 27, 2012**
 ------
+
+!!! warning "The subsequent demonstration could be considered outdated but retained for historical reference."
+
+    For the most current documentation for the listed applications, please consult the [ISIS Application Docs Website](https://isis.astrogeology.usgs.gov/).
+
+
 These specific ISIS demonstrations were held on Wednesday, June 27 2012 (ISIS3.4.0 Public Release)
 
 [Overview of photogrammetric processing in ISIS Slides](../assets/isis-demos/IsisDemoIntro.pdf)
@@ -18,6 +24,12 @@ These specific ISIS demonstrations were held on Wednesday, June 27 2012 (ISIS3.4
 
 ## **Planetary Data Workshop - Cassini ISIS Workshop - June 2012**
 ------
+
+!!! warning "The subsequent workshop could be considered outdated but retained for historical reference."
+
+    For the most current documentation for the listed applications, please consult the [ISIS Application Docs Website](https://isis.astrogeology.usgs.gov/).
+    Additionally, refer to our other [How-To Guides](../how-to-guides/) for current tutorials.
+
 The 'hands-on' Cassini ISIS workshop was held during the Planetary Data
 Workshop, Tuesday - June 26, 2012
 
