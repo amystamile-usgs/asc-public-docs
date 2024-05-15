@@ -28,7 +28,7 @@ These specific ISIS demonstrations were held on Wednesday, June 27 2012 (ISIS3.4
 !!! warning "The subsequent workshop could be considered outdated but retained for historical reference."
 
     For the most current documentation for the listed applications, please consult the [ISIS Application Docs Website](https://isis.astrogeology.usgs.gov/).
-    Additionally, refer to our other [How-To Guides](../how-to-guides/) for current tutorials.
+    Additionally, refer to our other [How-To Guides](../how-to-guides/index.md) for current tutorials.
 
 The 'hands-on' Cassini ISIS workshop was held during the Planetary Data
 Workshop, Tuesday - June 26, 2012
